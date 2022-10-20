@@ -185,12 +185,6 @@ body {
   transition: .2s;
 }
 
-.hover {
-  color: white;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
-  font-size: 10px;
-}
 
 .text:hover span {
   display: none;
@@ -203,8 +197,6 @@ body {
 }
 .text:hover > .hover {
   display: none;
-
-}
 
 }
 .tapp {
@@ -228,6 +220,10 @@ body {
   margin-top: 10px;
   border-radius: 4.3px;
   border: 1px solid #b7054f;
+  animation: wish 2s;
+}
+.tapp:hover > .hol-day-card{
+  animation: upp 4s forwards;
 }
 .tapp:hover:before{
   content: "Nhân dịp 20-10";
@@ -242,6 +238,22 @@ body {
   z-index: 6;
   color: #fff;
   font-size: 20px;
+}
+@keyframes wish {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes upp{
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(60px);
+  }
 }
 .tapp:hover:after{
   content: "Chúc ngiuuu luôn mạnh khỏe, tràn ngập niềm vui, xinh càng thêm xinh, may mắn, thành công. Chúc ngiuu thật nhiều tiền ăn chơi pay lắk và yêu mình hơn :333";
