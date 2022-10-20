@@ -44,7 +44,7 @@
   </div>
   <div class="text"><span>Happy Women's Day!</br> 20-10 </div>
 </div>
-<p class="hover"> Chạm vào chữ! </p>
+<p class="tapp"> Chạm vào chữ! </p>
 </div>
 </div>
 <style>
@@ -254,6 +254,55 @@ body {
 .text:hover > .hover {
   display: none;
 
+}
+.tapp {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 6;
+}
+.tapp:hover{
+  width: 250px;
+  height: 150px;
+  color: #00ccff00;
+  background: #ff8fa3;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4.3px;
+  border: 1px solid #b7054f;
+}
+.tapp:hover:before{
+  content: "Nhân dịp 20-10";
+  position: absolute;
+  width: 230px;
+  height: 130px;
+  background: #00ccff00;
+  left: 9px;
+  top: 9px;
+  border-radius: 9px;
+  border: 1.5px dashed  #ff005b;
+  z-index: 6;
+  color: #fff;
+  font-size: 20px;
+}
+.tapp:hover:after{
+  content: "Chúc ngiuuu luôn mạnh khỏe, tràn ngập niềm vui, xinh càng thêm xinh, may mắn, thành công. Chúc ngiuu thật nhiều tiền ăn chơi pay lắk và yêu mình hơn :333";
+  position: absolute;
+  color: #fff;
+  width: 230px;
+  height: 100px;
+  font-size: 12px;
+  box-sizing: border-box;
+  left: 9px;
+  top: 40px;
+  padding: 4px;
+}
 }
 </style>
 </body>
